@@ -8,3 +8,4 @@ A list of all free resources SQL Noir only first 3 levels are free.
 | SQL Murder Mystery   | [link](https://mystery.knightlab.com/) |
 | SQL 50               | [link](https://leetcode.com/studyplan/top-sql-50/) |
 | Data-Lemur           | [link](https://datalemur.com/) |
+| StrataScratch        | [link](https://www.stratascratch.com/) |
