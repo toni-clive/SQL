@@ -1,6 +1,7 @@
 [Profile](https://platform.stratascratch.com/user/clivetoni)
 
-A list of the Stratascratch problem's I'm working on or completed 
+A list of the Stratascratch problem's I'm working on or completed. <br> 
+In order to reuse the completed challenges again for revision a brief sentence is added to the comments.
 
 | Name | Difficulty | ID | Status | Comment | 
 | --- | --- | --- | --- | --- |
