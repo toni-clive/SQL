@@ -1,7 +1,7 @@
 [Link](https://datalemur.com/questions?category=SQL)
 
 A list of the DataLemur problem's I'm working on or completed. <br> 
-In order to reuse the completed challenges again for revision a brief sentence is added to the comments.
+In order to re use the completed challenges again for revision a brief sentence is added to the comments.
 
 | Title | Category | Difficulty | Status | Comment |
 |-------|----------|------------|--------| ------- |
@@ -10,12 +10,12 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | Page With No Likes | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN clause then FILTER results OR SUBQUERY to determine if a value is within another table |
 | Unfinished Parts | SQL | Easy |&nbsp;&nbsp; ✅ | WHERE clause to filter specific rows |
 | Laptop vs. Mobile Viewership | SQL | Easy |&nbsp;&nbsp; ✅  | COUNT fn with FILTER/CASE WHEN |
-| Average Post Hiatus (Part 1) | SQL | Easy |&nbsp;&nbsp; ✅  | WHERE to Filter rows THEN MAX and MIN fns to calculate, HAVING CLAUSE to determine valid results |
-| Teams Power Users | SQL | Easy | | |
-| Duplicate Job Listings | SQL | Easy | | |
-| Cities With Completed Trades | SQL | Easy | | |
-| Average Review Ratings | SQL | Easy | | |
-| Well Paid Employees | SQL | Easy | | |
+| Average Post Hiatus (Part 1) | SQL | Easy |&nbsp;&nbsp; ✅  | WHERE CLAUSE to Filter rows THEN MAX and MIN fns to calculate, HAVING CLAUSE to determine valid results |
+| Teams Power Users | SQL | Easy | &nbsp;&nbsp; ✅  | WHERE CLAUSE TO Filter rows then COUNT fn |
+| Duplicate Job Listings | SQL | Easy | &nbsp;&nbsp; ✅ | COUNT fn THEN FILTER for relevant matches |
+| Cities With Completed Trades | SQL | Easy | &nbsp;&nbsp; ✅  | JOIN using a common column, then use COUNT fn to Count based on a criteria|
+| Average Review Ratings | SQL | Easy | &nbsp;&nbsp; ✅  | AVG Fn |
+| Well Paid Employees | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN using a common values THEN WHERE to Filter rows  |
 | Final Account Balance | SQL | Easy | | |
 | App Click-through Rate (CTR) | SQL | Easy | | |
 | Second Day Confirmation | SQL | Easy | | |
@@ -34,7 +34,7 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | Top Three Salaries | SQL | Medium | | |
 | Signup Activation Rate | SQL | Medium | | |
 | Spotify Streaming History | SQL | Medium | | |
-| Supercloud Customer | SQL | Medium | | |
+| Supercloud Customer | SQL | Medium | &nbsp;&nbsp; ✅  | JOIN using a common column, then use COUNT fn to COUNT entries and to compare to a metric |
 | Odd and Even Measurements | SQL | Medium | | |
 | Swapped Food Delivery | SQL | Medium | | |
 | FAANG Stock Min-Max (Part 1) | SQL | Medium | | |
