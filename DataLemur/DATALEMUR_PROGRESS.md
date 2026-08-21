@@ -1,14 +1,15 @@
 [Link](https://datalemur.com/questions?category=SQL)
 
-A list of the DataLemur problem's I'm working on or completed 
+A list of the DataLemur problem's I'm working on or completed. <br> 
+In order to reuse the completed challenges again for revision a brief sentence is added to the comments.
 
 | Title | Category | Difficulty | Status | Comment |
 |-------|----------|------------|--------| ------- |
-| Histogram of Tweets | SQL | Easy | | |
-| Data Science Skills | SQL | Easy | | |
-| Page With No Likes | SQL | Easy | | |
-| Unfinished Parts | SQL | Easy | | |
-| Laptop vs. Mobile Viewership | SQL | Easy | | |
+| Histogram of Tweets | SQL | Easy |&nbsp;&nbsp; ✅ | COUNT fn, WHERE clause to filter specific rows |
+| Data Science Skills | SQL | Easy |&nbsp;&nbsp; ✅| WHERE clause to filter specific rows, then use the group by clause, then do further filtering through the having clause  |
+| Page With No Likes | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN clause then FILTER results OR SUBQUERY to determine if a value is within another table |
+| Unfinished Parts | SQL | Easy |&nbsp;&nbsp; ✅ | WHERE clause to filter specific rows |
+| Laptop vs. Mobile Viewership | SQL | Easy |&nbsp;&nbsp; ✅  | COUNT with FILTER/CASE WHEN |
 | Average Post Hiatus (Part 1) | SQL | Easy | | |
 | Teams Power Users | SQL | Easy | | |
 | Duplicate Job Listings | SQL | Easy | | |
