@@ -15,10 +15,10 @@ In order to re use the completed challenges again for revision a brief sentence 
 | Duplicate Job Listings | SQL | Easy | &nbsp;&nbsp; ✅ | COUNT fn THEN FILTER for relevant matches |
 | Cities With Completed Trades | SQL | Easy | &nbsp;&nbsp; ✅  | JOIN using a common column, then use COUNT fn to Count based on a criteria|
 | Average Review Ratings | SQL | Easy | &nbsp;&nbsp; ✅  | AVG Fn |
-| Well Paid Employees | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN using a common values THEN WHERE to Filter rows  |
-| Final Account Balance | SQL | Easy | | |
-| App Click-through Rate (CTR) | SQL | Easy | | |
-| Second Day Confirmation | SQL | Easy | | |
+| Well Paid Employees | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN using a common values THEN WHERE to Filter rows |
+| Final Account Balance | SQL | Easy |&nbsp;&nbsp; ✅ | SUM With conditioning |
+| App Click-through Rate (CTR) | SQL | Easy | &nbsp;&nbsp; ✅ | COUNT + ROUND use the formula provided and WHERE clause to filter rows|
+| Second Day Confirmation | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN Tables using a common column THEN Filter rows using WHERE clause  |
 | IBM db2 Product Analytics | SQL | Easy | | |
 | Cards Issued Difference | SQL | Easy | | |
 | Compressed Mean | SQL | Easy | | |
