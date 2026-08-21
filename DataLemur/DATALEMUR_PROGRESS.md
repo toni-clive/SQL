@@ -9,8 +9,8 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | Data Science Skills | SQL | Easy |&nbsp;&nbsp; ✅| WHERE clause to filter specific rows, then use the group by clause, then do further filtering through the having clause  |
 | Page With No Likes | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN clause then FILTER results OR SUBQUERY to determine if a value is within another table |
 | Unfinished Parts | SQL | Easy |&nbsp;&nbsp; ✅ | WHERE clause to filter specific rows |
-| Laptop vs. Mobile Viewership | SQL | Easy |&nbsp;&nbsp; ✅  | COUNT with FILTER/CASE WHEN |
-| Average Post Hiatus (Part 1) | SQL | Easy | | |
+| Laptop vs. Mobile Viewership | SQL | Easy |&nbsp;&nbsp; ✅  | COUNT fn with FILTER/CASE WHEN |
+| Average Post Hiatus (Part 1) | SQL | Easy |&nbsp;&nbsp; ✅  | WHERE to Filter rows THEN MAX and MIN fns to calculate, HAVING CLAUSE to determine valid results |
 | Teams Power Users | SQL | Easy | | |
 | Duplicate Job Listings | SQL | Easy | | |
 | Cities With Completed Trades | SQL | Easy | | |
