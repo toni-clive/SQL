@@ -20,8 +20,8 @@ In order to re use the completed challenges again for revision a brief sentence 
 | App Click-through Rate (CTR) | SQL | Easy | &nbsp;&nbsp; ✅ | COUNT + ROUND use the formula provided and WHERE clause to filter rows|
 | Second Day Confirmation | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN Tables using a common column THEN Filter rows using WHERE clause  |
 | IBM db2 Product Analytics | SQL | Easy | | |
-| Cards Issued Difference | SQL | Easy | | |
-| Compressed Mean | SQL | Easy | | |
+| Cards Issued Difference | SQL | Easy |&nbsp;&nbsp; ✅ | MAX and MIN fns to calculate the result |
+| Compressed Mean | SQL | Easy |&nbsp;&nbsp; ✅  | SUM and ROUND fns |
 | Pharmacy Analytics (Part 1) | SQL | Easy | | |
 | Pharmacy Analytics (Part 2) | SQL | Easy | | |
 | Pharmacy Analytics (Part 3) | SQL | Easy | | |
