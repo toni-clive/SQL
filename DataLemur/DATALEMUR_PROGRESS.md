@@ -19,12 +19,12 @@ In order to re use the completed challenges again for revision a brief sentence 
 | Final Account Balance | SQL | Easy |&nbsp;&nbsp; ✅ | SUM With conditioning |
 | App Click-through Rate (CTR) | SQL | Easy | &nbsp;&nbsp; ✅ | COUNT + ROUND use the formula provided and WHERE clause to filter rows|
 | Second Day Confirmation | SQL | Easy |&nbsp;&nbsp; ✅ | JOIN Tables using a common column THEN Filter rows using WHERE clause  |
-| IBM db2 Product Analytics | SQL | Easy | &nbsp;&nbsp; ✅  | WHERE to filter rows with range THEN COUNT fn |
+| IBM db2 Product Analytics | SQL | Easy | &nbsp;&nbsp; ✅  | WHERE clause to filter rows with range THEN COUNT fn |
 | Cards Issued Difference | SQL | Easy |&nbsp;&nbsp; ✅ | MAX and MIN fns to calculate the result |
 | Compressed Mean | SQL | Easy |&nbsp;&nbsp; ✅  | SUM and ROUND fns |
-| Pharmacy Analytics (Part 1) | SQL | Easy | | |
-| Pharmacy Analytics (Part 2) | SQL | Easy | | |
-| Pharmacy Analytics (Part 3) | SQL | Easy | | |
+| Pharmacy Analytics (Part 1) | SQL | Easy | &nbsp;&nbsp; ✅ | calculate values using columns |
+| Pharmacy Analytics (Part 2) | SQL | Easy |&nbsp;&nbsp; ✅ | WHERE clause to filter rows then apply SUM AND COUNT fns  |
+| Pharmacy Analytics (Part 3) | SQL | Easy | &nbsp;&nbsp; ✅ | |
 | Patient Support Analysis (Part 1) | SQL | Easy | | |
 | User's Third Transaction | SQL | Medium | | |
 | Second Highest Salary | SQL | Medium | | |
