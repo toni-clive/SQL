@@ -26,7 +26,7 @@ In order to re use the completed challenges again for revision a brief sentence 
 | Pharmacy Analytics (Part 2) | SQL | Easy |&nbsp;&nbsp; ✅ | WHERE clause to filter rows then apply SUM AND COUNT fns  |
 | Pharmacy Analytics (Part 3) | SQL | Easy | &nbsp;&nbsp; ✅ | SUM + ROUND AND CONCAT fns Then ORDER BY SUM fn |
 | Patient Support Analysis (Part 1) | SQL | Easy | &nbsp;&nbsp; ✅ | Use COUNT fn twice|
-| User's Third Transaction | SQL | Medium | | |
+| User's Third Transaction | SQL | Medium | &nbsp;&nbsp; ✅ | ROW NUMBER fn + WHERE Statement |
 | Second Highest Salary | SQL | Medium | | |
 | Sending vs. Opening Snaps | SQL | Medium | | |
 | Tweets' Rolling Averages | SQL | Medium | | |
