@@ -17,11 +17,11 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Basic string searches](https://pgexercises.com/questions/basic/where3.html) | &nbsp;&nbsp;  | SELECT Statement specify the columns required THEN use a WHERE clause to filter results |
 | [Matching against multiple possible values](https://pgexercises.com/questions/basic/where4.html) | &nbsp;&nbsp; | SELECT Statement specify the columns required THEN use a WHERE clause to filter results |
 | [Classify results into buckets](https://pgexercises.com/questions/basic/classify.html) | &nbsp;&nbsp; | SELECT Statement specify the columns required THEN use CASE WHEN to generate a column |
-| [Working with dates](https://pgexercises.com/questions/basic/date.html) | &nbsp;&nbsp; |  |
-| [Removing duplicates, and ordering results](https://pgexercises.com/questions/basic/unique.html) | &nbsp;&nbsp;  |  |
-| [Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html) | &nbsp;&nbsp;  |  |
-| [Simple aggregation](https://pgexercises.com/questions/basic/agg.html) | &nbsp;&nbsp; |  |
-| [More aggregation](https://pgexercises.com/questions/basic/agg2.html) | &nbsp;&nbsp; |  |
+| [Working with dates](https://pgexercises.com/questions/basic/date.html) | &nbsp;&nbsp; | SELECT Statement specify the columns required THEN use a WHERE clause to filter results |
+| [Removing duplicates, and ordering results](https://pgexercises.com/questions/basic/unique.html) | &nbsp;&nbsp;  | SELECT + DISTINCT THEN ORDER Statement  |
+| [Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html) | &nbsp;&nbsp;  | SELECT + UNION |
+| [Simple aggregation](https://pgexercises.com/questions/basic/agg.html) | &nbsp;&nbsp; | SELECT + ORDER BY / SELECT + aggregation function  |
+| [More aggregation](https://pgexercises.com/questions/basic/agg2.html) | &nbsp;&nbsp; | SELECT + ORDER BY / SELECT + aggregation function |
 
 ## Joins and Subqueries
 | Name | Status | Comment |
