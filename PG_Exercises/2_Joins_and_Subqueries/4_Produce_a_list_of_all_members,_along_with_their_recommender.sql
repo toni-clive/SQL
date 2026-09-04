@@ -1,0 +1,1 @@
+-- https://pgexercises.com/questions/joins/self2.html

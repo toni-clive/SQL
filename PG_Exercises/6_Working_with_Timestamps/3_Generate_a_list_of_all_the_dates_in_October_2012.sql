@@ -1,0 +1,1 @@
+-- https://pgexercises.com/questions/date/series.html

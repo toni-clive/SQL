@@ -1,0 +1,1 @@
+-- https://pgexercises.com/questions/aggregates/fachoursbymonth2.html

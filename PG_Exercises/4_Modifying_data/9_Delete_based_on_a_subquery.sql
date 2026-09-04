@@ -1,0 +1,1 @@
+-- https://pgexercises.com/questions/updates/deletewh2.html

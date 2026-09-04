@@ -1,0 +1,1 @@
+-- https://pgexercises.com/questions/aggregates/fachours2.html

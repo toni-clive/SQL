@@ -26,9 +26,9 @@ In order to reuse the completed challenges again for revision a brief sentence i
 ## Joins and Subqueries
 | Name | Status | Comment |
 | ---- | ------ | ------- |
-| [Retrieve the start times of members' bookings](https://pgexercises.com/questions/joins/simplejoin.html) |  |  |
-| [Work out the start times of bookings for tennis courts](https://pgexercises.com/questions/joins/simplejoin2.html) |  |  |
-| [Produce a list of all members who have recommended another member](https://pgexercises.com/questions/joins/self.html) |  |  |
+| [Retrieve the start times of members' bookings](https://pgexercises.com/questions/joins/simplejoin.html) | &nbsp;&nbsp;  | JOIN clause & where to filter results |
+| [Work out the start times of bookings for tennis courts](https://pgexercises.com/questions/joins/simplejoin2.html) | &nbsp;&nbsp; | JOIN clause & where to filter results |
+| [Produce a list of all members who have recommended another member](https://pgexercises.com/questions/joins/self.html) | &nbsp;&nbsp; | JOIN clause AND DISTINCT SELECT to avoid duplicates  |
 | [Produce a list of all members, along with their recommender](https://pgexercises.com/questions/joins/self2.html) |  |  |
 | [Produce a list of all members who have used a tennis court](https://pgexercises.com/questions/joins/threejoin.html) |  |  |
 | [Produce a list of costly bookings](https://pgexercises.com/questions/joins/threejoin2.html) |  |  |
