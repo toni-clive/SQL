@@ -10,18 +10,18 @@ In order to reuse the completed challenges again for revision a brief sentence i
 ## Simple SQL Queries
 | Name | Status | Comment |
 | ---- | ------ | ------- |
-| [Retrieve everything from a table](https://pgexercises.com/questions/basic/selectall.html) |  |  |
-| [Retrieve specific columns from a table](https://pgexercises.com/questions/basic/selectspecific.html) |  |  |
-| [Control which rows are retrieved](https://pgexercises.com/questions/basic/where.html) |  |  |
-| [Control which rows are retrieved - part 2](https://pgexercises.com/questions/basic/where2.html) |  |  |
-| [Basic string searches](https://pgexercises.com/questions/basic/where3.html) |  |  |
-| [Matching against multiple possible values](https://pgexercises.com/questions/basic/where4.html) |  |  |
-| [Classify results into buckets](https://pgexercises.com/questions/basic/classify.html) |  |  |
-| [Working with dates](https://pgexercises.com/questions/basic/date.html) |  |  |
-| [Removing duplicates, and ordering results](https://pgexercises.com/questions/basic/unique.html) |  |  |
-| [Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html) |  |  |
-| [Simple aggregation](https://pgexercises.com/questions/basic/agg.html) |  |  |
-| [More aggregation](https://pgexercises.com/questions/basic/agg2.html) |  |  |
+| [Retrieve everything from a table](https://pgexercises.com/questions/basic/selectall.html) | &nbsp;&nbsp;  | SELECT / TABLE  |
+| [Retrieve specific columns from a table](https://pgexercises.com/questions/basic/selectspecific.html) | &nbsp;&nbsp;  | SELECT Statement specify the columns required |
+| [Control which rows are retrieved](https://pgexercises.com/questions/basic/where.html) | &nbsp;&nbsp; | SELECT Statement THEN use a WHERE clause to filter results |
+| [Control which rows are retrieved - part 2](https://pgexercises.com/questions/basic/where2.html) | &nbsp;&nbsp; | SELECT Statement specify the columns required THEN use a WHERE clause to filter results |
+| [Basic string searches](https://pgexercises.com/questions/basic/where3.html) | &nbsp;&nbsp;  | SELECT Statement specify the columns required THEN use a WHERE clause to filter results |
+| [Matching against multiple possible values](https://pgexercises.com/questions/basic/where4.html) | &nbsp;&nbsp; | SELECT Statement specify the columns required THEN use a WHERE clause to filter results |
+| [Classify results into buckets](https://pgexercises.com/questions/basic/classify.html) | &nbsp;&nbsp; | SELECT Statement specify the columns required THEN use CASE WHEN to generate a column |
+| [Working with dates](https://pgexercises.com/questions/basic/date.html) | &nbsp;&nbsp; |  |
+| [Removing duplicates, and ordering results](https://pgexercises.com/questions/basic/unique.html) | &nbsp;&nbsp;  |  |
+| [Combining results from multiple queries](https://pgexercises.com/questions/basic/union.html) | &nbsp;&nbsp;  |  |
+| [Simple aggregation](https://pgexercises.com/questions/basic/agg.html) | &nbsp;&nbsp; |  |
+| [More aggregation](https://pgexercises.com/questions/basic/agg2.html) | &nbsp;&nbsp; |  |
 
 ## Joins and Subqueries
 | Name | Status | Comment |
