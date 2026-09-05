@@ -77,9 +77,9 @@ In order to reuse the completed challenges again for revision a brief sentence i
 ## Working with Timestamps
 | Name | Status | Comment |
 | ---- | ------ | ------- |
-| [Produce a timestamp for 1 a.m. on the 31st of August 2012](https://pgexercises.com/questions/date/timestamp.html) |  |  |
-| [Subtract timestamps from each other](https://pgexercises.com/questions/date/interval.html) |  |  |
-| [Generate a list of all the dates in October 2012](https://pgexercises.com/questions/date/series.html) |  |  |
+| [Produce a timestamp for 1 a.m. on the 31st of August 2012](https://pgexercises.com/questions/date/timestamp.html) | &nbsp;&nbsp; | hard code the time stamp |
+| [Subtract timestamps from each other](https://pgexercises.com/questions/date/interval.html) | &nbsp;&nbsp; | SUBTRACTION using the correct datatype  |
+| [Generate a list of all the dates in October 2012](https://pgexercises.com/questions/date/series.html) | &nbsp;&nbsp; | GENERATE_SERIES function |
 | [Get the day of the month from a timestamp](https://pgexercises.com/questions/date/extract.html) |  |  |
 | [Work out the number of seconds between timestamps](https://pgexercises.com/questions/date/interval2.html) |  |  |
 | [Work out the number of days in each month of 2012](https://pgexercises.com/questions/date/daysinmonth.html) |  |  |
