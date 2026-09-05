@@ -51,13 +51,13 @@ In order to reuse the completed challenges again for revision a brief sentence i
 ## Aggregates
 | Name | Status | Comment |
 | ---- | ------ | ------- |
-| [Count the number of facilities](https://pgexercises.com/questions/aggregates/count.html) |  |  |
-| [Count the number of expensive facilities](https://pgexercises.com/questions/aggregates/count2.html) |  |  |
-| [Count the number of recommendations each member makes.](https://pgexercises.com/questions/aggregates/count3.html) |  |  |
-| [List the total slots booked per facility](https://pgexercises.com/questions/aggregates/fachours.html) |  |  |
-| [List the total slots booked per facility in a given month](https://pgexercises.com/questions/aggregates/fachoursbymonth.html) |  |  |
-| [List the total slots booked per facility per month](https://pgexercises.com/questions/aggregates/fachoursbymonth2.html) |  |  |
-| [Find the count of members who have made at least one booking](https://pgexercises.com/questions/aggregates/members1.html) |  |  |
+| [Count the number of facilities](https://pgexercises.com/questions/aggregates/count.html) | &nbsp;&nbsp; | COUNT function |
+| [Count the number of expensive facilities](https://pgexercises.com/questions/aggregates/count2.html) | &nbsp;&nbsp; | COUNT function with a FILTER OR WHERE clause |
+| [Count the number of recommendations each member makes.](https://pgexercises.com/questions/aggregates/count3.html) | &nbsp;&nbsp; | COUNT function + GROUPING of aggregation |
+| [List the total slots booked per facility](https://pgexercises.com/questions/aggregates/fachours.html) | &nbsp;&nbsp; | SUM function + GROUPING of aggregation |
+| [List the total slots booked per facility in a given month](https://pgexercises.com/questions/aggregates/fachoursbymonth.html) | &nbsp;&nbsp; | SUM function + GROUPING of aggregation + WHERE to filter rows |
+| [List the total slots booked per facility per month](https://pgexercises.com/questions/aggregates/fachoursbymonth2.html) | &nbsp;&nbsp; | SUM function + GROUPING of aggregation +  WHERE clause to filter rows |
+| [Find the count of members who have made at least one booking](https://pgexercises.com/questions/aggregates/members1.html) | &nbsp;&nbsp; | COUNT + DISTINCT |
 | [List facilities with more than 1000 slots booked](https://pgexercises.com/questions/aggregates/fachours1a.html) |  |  |
 | [Find the total revenue of each facility](https://pgexercises.com/questions/aggregates/facrev.html) |  |  |
 | [Find facilities with a total revenue less than 1000](https://pgexercises.com/questions/aggregates/facrev2.html) |  |  |
