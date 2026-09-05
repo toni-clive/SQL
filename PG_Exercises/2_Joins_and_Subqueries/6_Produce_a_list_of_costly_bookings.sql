@@ -12,7 +12,4 @@ FROM cd.bookings b JOIN cd.facilities f ON b.facid = f.facid
 JOIN cd.members m  ON m.memid = b.memid 
 WHERE 
 (b.starttime >= '2012-09-14' and b.starttime < '2012-09-15') 
-
-
-
-ORDER BY cost DESC)a where cost IS NOT NULL
+ORDER BY cost DESC) a where cost IS NOT NULL

@@ -1,3 +1,3 @@
 -- https://pgexercises.com/questions/aggregates/count2.html
 
-SELECT COUNT(*) FROM cd.facilities
+SELECT COUNT(*) FILTER(WHERE guestcost > 10) FROM cd.facilities

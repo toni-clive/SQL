@@ -66,13 +66,13 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [List the total hours booked per named facility](https://pgexercises.com/questions/aggregates/fachours3.html) | &nbsp;&nbsp; | SUM + ROUND function THEN GROUP aggregations |
 | [List each member's first booking after September 1st 2012](https://pgexercises.com/questions/aggregates/nbooking.html) | &nbsp;&nbsp; | MIN Function + WHERE clause to filter results |
 | [Produce a list of member names, with each row containing the total member count](https://pgexercises.com/questions/aggregates/countmembers.html) | &nbsp;&nbsp; | COUNT Function |
-| [Produce a numbered list of members](https://pgexercises.com/questions/aggregates/nummembers.html) |  |  |
-| [Output the facility id that has the highest number of slots booked, again](https://pgexercises.com/questions/aggregates/fachours4.html) |  |  |
-| [Rank members by (rounded) hours used](https://pgexercises.com/questions/aggregates/rankmembers.html) |  |  |
-| [Find the top three revenue generating facilities](https://pgexercises.com/questions/aggregates/facrev3.html) |  |  |
-| [Classify facilities by value](https://pgexercises.com/questions/aggregates/classify.html) |  |  |
-| [Calculate the payback time for each facility](https://pgexercises.com/questions/aggregates/payback.html) |  |  |
-| [Calculate a rolling average of total revenue](https://pgexercises.com/questions/aggregates/rollingavg.html) |  |  |
+| [Produce a numbered list of members](https://pgexercises.com/questions/aggregates/nummembers.html) | &nbsp;&nbsp; | ROW NUMBER function |
+| [Output the facility id that has the highest number of slots booked, again](https://pgexercises.com/questions/aggregates/fachours4.html) | &nbsp;&nbsp; | DENSE_RANK Function  |
+| [Rank members by (rounded) hours used](https://pgexercises.com/questions/aggregates/rankmembers.html) | &nbsp;&nbsp; | SUM + ROUND GROUP aggregation THEN RANK based on calculations |
+| [Find the top three revenue generating facilities](https://pgexercises.com/questions/aggregates/facrev3.html) | &nbsp;&nbsp; | DENSE RANK Function GROUP aggregations  |
+| [Classify facilities by value](https://pgexercises.com/questions/aggregates/classify.html) | &nbsp;&nbsp; | NTILE Function THEN CASE WHEN in the SELECT statement |
+| [Calculate the payback time for each facility](https://pgexercises.com/questions/aggregates/payback.html) | &nbsp;&nbsp; | SUM function then GROUP aggregation |
+| [Calculate a rolling average of total revenue](https://pgexercises.com/questions/aggregates/rollingavg.html) | &nbsp;&nbsp; | GENERATE_SERIES function + SUM function  |
 
 ## String Operations
 | Name | Status | Comment |
