@@ -35,6 +35,19 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Produce a list of all members, along with their recommender, using no joins.](https://pgexercises.com/questions/joins/sub.html) | &nbsp;&nbsp; | Subquery |
 | [Produce a list of costly bookings, using a subquery](https://pgexercises.com/questions/joins/tjsub.html) |  &nbsp;&nbsp; | Apply a subquery to the following solution Produce a list of costly bookings |
 
+## Modifying data
+| Name | Status | Comment |
+| ---- | ------ | ------- |
+| [Insert some data into a table](https://pgexercises.com/questions/updates/insert.html) | &nbsp;&nbsp; | INSERT statement provide the values needed |
+| [Insert multiple rows of data into a table](https://pgexercises.com/questions/updates/insert2.html) | &nbsp;&nbsp; | INSERT statement provide the values needed |
+| [Insert calculated data into a table](https://pgexercises.com/questions/updates/insert3.html) | &nbsp;&nbsp; | INSERT statement + SELECT statement |
+| [Update some existing data](https://pgexercises.com/questions/updates/update.html) |  |  |
+| [Update multiple rows and columns at the same time](https://pgexercises.com/questions/updates/updatemultiple.html) | &nbsp;&nbsp; | UPDATE statement + SET |
+| [Update a row based on the contents of another row](https://pgexercises.com/questions/updates/updatecalculated.html) |  |  |
+| [Delete all bookings](https://pgexercises.com/questions/updates/delete.html) |  |  |
+| [Delete a member from the cd.members table](https://pgexercises.com/questions/updates/deletewh.html) |  |  |
+| [Delete based on a subquery](https://pgexercises.com/questions/updates/deletewh2.html) |  |  |
+
 ## Aggregates
 | Name | Status | Comment |
 | ---- | ------ | ------- |
@@ -60,19 +73,6 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Classify facilities by value](https://pgexercises.com/questions/aggregates/classify.html) |  |  |
 | [Calculate the payback time for each facility](https://pgexercises.com/questions/aggregates/payback.html) |  |  |
 | [Calculate a rolling average of total revenue](https://pgexercises.com/questions/aggregates/rollingavg.html) |  |  |
-
-## Modifying data
-| Name | Status | Comment |
-| ---- | ------ | ------- |
-| [Insert some data into a table](https://pgexercises.com/questions/updates/insert.html) |  |  |
-| [Insert multiple rows of data into a table](https://pgexercises.com/questions/updates/insert2.html) |  |  |
-| [Insert calculated data into a table](https://pgexercises.com/questions/updates/insert3.html) |  |  |
-| [Update some existing data](https://pgexercises.com/questions/updates/update.html) |  |  |
-| [Update multiple rows and columns at the same time](https://pgexercises.com/questions/updates/updatemultiple.html) |  |  |
-| [Update a row based on the contents of another row](https://pgexercises.com/questions/updates/updatecalculated.html) |  |  |
-| [Delete all bookings](https://pgexercises.com/questions/updates/delete.html) |  |  |
-| [Delete a member from the cd.members table](https://pgexercises.com/questions/updates/deletewh.html) |  |  |
-| [Delete based on a subquery](https://pgexercises.com/questions/updates/deletewh2.html) |  |  |
 
 ## String Operations
 | Name | Status | Comment |
