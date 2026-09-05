@@ -74,17 +74,6 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Calculate the payback time for each facility](https://pgexercises.com/questions/aggregates/payback.html) | &nbsp;&nbsp; | SUM function then GROUP aggregation |
 | [Calculate a rolling average of total revenue](https://pgexercises.com/questions/aggregates/rollingavg.html) | &nbsp;&nbsp; | GENERATE_SERIES function + SUM function  |
 
-## String Operations
-| Name | Status | Comment |
-| ---- | ------ | ------- |
-| [Format the names of members](https://pgexercises.com/questions/string/concat.html) |  |  |
-| [Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html) |  |  |
-| [Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html) |  |  |
-| [Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html) |  |  |
-| [Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html) |  |  |
-| [Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html) |  |  |
-| [Clean up telephone numbers](https://pgexercises.com/questions/string/translate.html) |  |  |
-
 ## Working with Timestamps
 | Name | Status | Comment |
 | ---- | ------ | ------- |
@@ -98,6 +87,17 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Work out the end time of bookings](https://pgexercises.com/questions/date/endtimes.html) |  |  |
 | [Return a count of bookings for each month](https://pgexercises.com/questions/date/bookingspermonth.html) |  |  |
 | [Work out the utilisation percentage for each facility by month](https://pgexercises.com/questions/date/utilisationpermonth.html) |  |  |
+
+## String Operations
+| Name | Status | Comment |
+| ---- | ------ | ------- |
+| [Format the names of members](https://pgexercises.com/questions/string/concat.html) |  |  |
+| [Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html) |  |  |
+| [Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html) |  |  |
+| [Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html) |  |  |
+| [Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html) |  |  |
+| [Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html) |  |  |
+| [Clean up telephone numbers](https://pgexercises.com/questions/string/translate.html) |  |  |
 
 ## Recursive Queries
 | Name | Status | Comment |
