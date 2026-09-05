@@ -10,3 +10,4 @@ A list of all free resources SQL Noir only first 3 levels are free.
 | Data-Lemur           | [link](https://datalemur.com/) |
 | StrataScratch        | [link](https://www.stratascratch.com/) |
 | PGExercises          | [Link](https://pgexercises.com/) |
+| SQLzoo               | [Link](https://www.sqlzoo.net/)  |
