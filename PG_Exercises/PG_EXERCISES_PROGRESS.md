@@ -61,11 +61,11 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [List facilities with more than 1000 slots booked](https://pgexercises.com/questions/aggregates/fachours1a.html) |  &nbsp;&nbsp; | SUM function + GROUP aggregation AND filtering the results |
 | [Find the total revenue of each facility](https://pgexercises.com/questions/aggregates/facrev.html) | &nbsp;&nbsp; | JOIN clause + SUM function + GROUP aggregation |
 | [Find facilities with a total revenue less than 1000](https://pgexercises.com/questions/aggregates/facrev2.html) | &nbsp;&nbsp; | JOIN clause + SUM function + GROUP aggregation finally a WHERE clause to filter rows |
-| [Output the facility id that has the highest number of slots booked](https://pgexercises.com/questions/aggregates/fachours2.html) |  |  |
-| [List the total slots booked per facility per month, part 2](https://pgexercises.com/questions/aggregates/fachoursbymonth3.html) |  |  |
-| [List the total hours booked per named facility](https://pgexercises.com/questions/aggregates/fachours3.html) |  |  |
-| [List each member's first booking after September 1st 2012](https://pgexercises.com/questions/aggregates/nbooking.html) |  |  |
-| [Produce a list of member names, with each row containing the total member count](https://pgexercises.com/questions/aggregates/countmembers.html) |  |  |
+| [Output the facility id that has the highest number of slots booked](https://pgexercises.com/questions/aggregates/fachours2.html) | &nbsp;&nbsp; | SUM function + DENSE RANK |
+| [List the total slots booked per facility per month, part 2](https://pgexercises.com/questions/aggregates/fachoursbymonth3.html) | &nbsp;&nbsp; | SUM function then GROUP aggregation using the rollup function |
+| [List the total hours booked per named facility](https://pgexercises.com/questions/aggregates/fachours3.html) | &nbsp;&nbsp; | SUM + ROUND function THEN GROUP aggregations |
+| [List each member's first booking after September 1st 2012](https://pgexercises.com/questions/aggregates/nbooking.html) | &nbsp;&nbsp; | MIN Function + WHERE clause to filter results |
+| [Produce a list of member names, with each row containing the total member count](https://pgexercises.com/questions/aggregates/countmembers.html) | &nbsp;&nbsp; | COUNT Function |
 | [Produce a numbered list of members](https://pgexercises.com/questions/aggregates/nummembers.html) |  |  |
 | [Output the facility id that has the highest number of slots booked, again](https://pgexercises.com/questions/aggregates/fachours4.html) |  |  |
 | [Rank members by (rounded) hours used](https://pgexercises.com/questions/aggregates/rankmembers.html) |  |  |
