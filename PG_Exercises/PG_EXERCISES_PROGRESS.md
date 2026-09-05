@@ -58,9 +58,9 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [List the total slots booked per facility in a given month](https://pgexercises.com/questions/aggregates/fachoursbymonth.html) | &nbsp;&nbsp; | SUM function + GROUPING of aggregation + WHERE to filter rows |
 | [List the total slots booked per facility per month](https://pgexercises.com/questions/aggregates/fachoursbymonth2.html) | &nbsp;&nbsp; | SUM function + GROUPING of aggregation +  WHERE clause to filter rows |
 | [Find the count of members who have made at least one booking](https://pgexercises.com/questions/aggregates/members1.html) | &nbsp;&nbsp; | COUNT + DISTINCT |
-| [List facilities with more than 1000 slots booked](https://pgexercises.com/questions/aggregates/fachours1a.html) |  |  |
-| [Find the total revenue of each facility](https://pgexercises.com/questions/aggregates/facrev.html) |  |  |
-| [Find facilities with a total revenue less than 1000](https://pgexercises.com/questions/aggregates/facrev2.html) |  |  |
+| [List facilities with more than 1000 slots booked](https://pgexercises.com/questions/aggregates/fachours1a.html) |  &nbsp;&nbsp; | SUM function + GROUP aggregation AND filtering the results |
+| [Find the total revenue of each facility](https://pgexercises.com/questions/aggregates/facrev.html) | &nbsp;&nbsp; | JOIN clause + SUM function + GROUP aggregation |
+| [Find facilities with a total revenue less than 1000](https://pgexercises.com/questions/aggregates/facrev2.html) | &nbsp;&nbsp; | JOIN clause + SUM function + GROUP aggregation finally a WHERE clause to filter rows |
 | [Output the facility id that has the highest number of slots booked](https://pgexercises.com/questions/aggregates/fachours2.html) |  |  |
 | [List the total slots booked per facility per month, part 2](https://pgexercises.com/questions/aggregates/fachoursbymonth3.html) |  |  |
 | [List the total hours booked per named facility](https://pgexercises.com/questions/aggregates/fachours3.html) |  |  |
