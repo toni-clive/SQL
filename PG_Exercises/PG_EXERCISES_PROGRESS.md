@@ -41,12 +41,12 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Insert some data into a table](https://pgexercises.com/questions/updates/insert.html) | &nbsp;&nbsp; | INSERT statement provide the values needed |
 | [Insert multiple rows of data into a table](https://pgexercises.com/questions/updates/insert2.html) | &nbsp;&nbsp; | INSERT statement provide the values needed |
 | [Insert calculated data into a table](https://pgexercises.com/questions/updates/insert3.html) | &nbsp;&nbsp; | INSERT statement + SELECT statement |
-| [Update some existing data](https://pgexercises.com/questions/updates/update.html) |  |  |
+| [Update some existing data](https://pgexercises.com/questions/updates/update.html) | &nbsp;&nbsp; | UPDATE statement + SET |
 | [Update multiple rows and columns at the same time](https://pgexercises.com/questions/updates/updatemultiple.html) | &nbsp;&nbsp; | UPDATE statement + SET |
-| [Update a row based on the contents of another row](https://pgexercises.com/questions/updates/updatecalculated.html) |  |  |
-| [Delete all bookings](https://pgexercises.com/questions/updates/delete.html) |  |  |
-| [Delete a member from the cd.members table](https://pgexercises.com/questions/updates/deletewh.html) |  |  |
-| [Delete based on a subquery](https://pgexercises.com/questions/updates/deletewh2.html) |  |  |
+| [Update a row based on the contents of another row](https://pgexercises.com/questions/updates/updatecalculated.html) | &nbsp;&nbsp; | UPDATE statement + SET |
+| [Delete all bookings](https://pgexercises.com/questions/updates/delete.html) | &nbsp;&nbsp; | DELETE statement |
+| [Delete a member from the cd.members table](https://pgexercises.com/questions/updates/deletewh.html) | &nbsp;&nbsp; | DELETE statement + WHERE clause  |
+| [Delete based on a subquery](https://pgexercises.com/questions/updates/deletewh2.html) | &nbsp;&nbsp; | DELETE statement + WHERE clause |
 
 ## Aggregates
 | Name | Status | Comment |
