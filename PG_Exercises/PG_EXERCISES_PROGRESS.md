@@ -85,8 +85,8 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Work out the number of days in each month of 2012](https://pgexercises.com/questions/date/daysinmonth.html) | &nbsp;&nbsp;  | GENERATE SERIES function |
 | [Work out the number of days remaining in the month](https://pgexercises.com/questions/date/daysremaining.html) | &nbsp;&nbsp;  | timestamp subtraction then cast to date |
 | [Work out the end time of bookings](https://pgexercises.com/questions/date/endtimes.html) | &nbsp;&nbsp; | timestamp + math operations |
-| [Return a count of bookings for each month](https://pgexercises.com/questions/date/bookingspermonth.html) |  |  |
-| [Work out the utilisation percentage for each facility by month](https://pgexercises.com/questions/date/utilisationpermonth.html) |  |  |
+| [Return a count of bookings for each month](https://pgexercises.com/questions/date/bookingspermonth.html) | &nbsp;&nbsp; | Date_trunc function |
+| [Work out the utilisation percentage for each facility by month](https://pgexercises.com/questions/date/utilisationpermonth.html) | &nbsp;&nbsp;  | DATE_TRUNC function + SUM function|
 
 ## String Operations
 | Name | Status | Comment |
