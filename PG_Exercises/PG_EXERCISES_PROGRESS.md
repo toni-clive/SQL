@@ -81,10 +81,10 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Subtract timestamps from each other](https://pgexercises.com/questions/date/interval.html) | &nbsp;&nbsp; | SUBTRACTION using the correct datatype  |
 | [Generate a list of all the dates in October 2012](https://pgexercises.com/questions/date/series.html) | &nbsp;&nbsp; | GENERATE_SERIES function |
 | [Get the day of the month from a timestamp](https://pgexercises.com/questions/date/extract.html) | &nbsp;&nbsp; | EXTRACT Function |
-| [Work out the number of seconds between timestamps](https://pgexercises.com/questions/date/interval2.html) |  |  |
-| [Work out the number of days in each month of 2012](https://pgexercises.com/questions/date/daysinmonth.html) |  |  |
-| [Work out the number of days remaining in the month](https://pgexercises.com/questions/date/daysremaining.html) |  |  |
-| [Work out the end time of bookings](https://pgexercises.com/questions/date/endtimes.html) |  |  |
+| [Work out the number of seconds between timestamps](https://pgexercises.com/questions/date/interval2.html) | &nbsp;&nbsp; | EPOCH Function |
+| [Work out the number of days in each month of 2012](https://pgexercises.com/questions/date/daysinmonth.html) | &nbsp;&nbsp;  | GENERATE SERIES function |
+| [Work out the number of days remaining in the month](https://pgexercises.com/questions/date/daysremaining.html) | &nbsp;&nbsp;  | timestamp subtraction then cast to date |
+| [Work out the end time of bookings](https://pgexercises.com/questions/date/endtimes.html) | &nbsp;&nbsp; | timestamp + math operations |
 | [Return a count of bookings for each month](https://pgexercises.com/questions/date/bookingspermonth.html) |  |  |
 | [Work out the utilisation percentage for each facility by month](https://pgexercises.com/questions/date/utilisationpermonth.html) |  |  |
 
