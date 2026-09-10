@@ -91,9 +91,9 @@ In order to reuse the completed challenges again for revision a brief sentence i
 ## String Operations
 | Name | Status | Comment |
 | ---- | ------ | ------- |
-| [Format the names of members](https://pgexercises.com/questions/string/concat.html) |  |  |
-| [Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html) |  |  |
-| [Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html) |  |  |
+| [Format the names of members](https://pgexercises.com/questions/string/concat.html) | &nbsp;&nbsp; | Use || to concat strings |
+| [Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html) | &nbsp;&nbsp; | LIKE Operator |
+| [Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html) | &nbsp;&nbsp; | ILIKE Operator |
 | [Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html) |  |  |
 | [Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html) |  |  |
 | [Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html) |  |  |
