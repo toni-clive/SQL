@@ -94,10 +94,10 @@ In order to reuse the completed challenges again for revision a brief sentence i
 | [Format the names of members](https://pgexercises.com/questions/string/concat.html) | &nbsp;&nbsp; | Use || to concat strings |
 | [Find facilities by a name prefix](https://pgexercises.com/questions/string/like.html) | &nbsp;&nbsp; | LIKE Operator |
 | [Perform a case-insensitive search](https://pgexercises.com/questions/string/case.html) | &nbsp;&nbsp; | ILIKE Operator |
-| [Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html) |  |  |
-| [Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html) |  |  |
-| [Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html) |  |  |
-| [Clean up telephone numbers](https://pgexercises.com/questions/string/translate.html) |  |  |
+| [Find telephone numbers with parentheses](https://pgexercises.com/questions/string/reg.html) | &nbsp;&nbsp; | LIKE operator  |
+| [Pad zip codes with leading zeroes](https://pgexercises.com/questions/string/pad.html) | &nbsp;&nbsp; | LPAD Function |
+| [Count the number of members whose surname starts with each letter of the alphabet](https://pgexercises.com/questions/string/substr.html) | &nbsp;&nbsp;  | SUBSTR function |
+| [Clean up telephone numbers](https://pgexercises.com/questions/string/translate.html) | nbsp;&nbsp; | REGEXP_REPLACE / Translate Function |
 
 ## Recursive Queries
 | Name | Status | Comment |
