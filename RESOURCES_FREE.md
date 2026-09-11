@@ -12,3 +12,4 @@ A list of all free resources SQL Noir only first 3 levels are free.
 | PGExercises          | [Link](https://pgexercises.com/) |
 | SQLzoo               | [Link](https://www.sqlzoo.net/)  |
 | InterviewQuery       | [Link](https://www.interviewquery.com/) |
+| Codewars             | [Link](https://www.codewars.com/) |
