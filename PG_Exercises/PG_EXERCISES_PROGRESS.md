@@ -102,6 +102,6 @@ In order to reuse the completed challenges again for revision a brief sentence i
 ## Recursive Queries
 | Name | Status | Comment |
 | ---- | ------ | ------- |
-| [Find the upward recommendation chain for member ID 27](https://pgexercises.com/questions/recursive/getupward.html) |  |  |
+| [Find the upward recommendation chain for member ID 27](https://pgexercises.com/questions/recursive/getupward.html) | nbsp;&nbsp; | With recursive expression |
 | [Find the downward recommendation chain for member ID 1](https://pgexercises.com/questions/recursive/getdownward.html) |  |  |
 | [Produce a CTE that can return the upward recommendation chain for any member](https://pgexercises.com/questions/recursive/getupwardall.html) |  |  |
