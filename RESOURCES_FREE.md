@@ -13,3 +13,4 @@ A list of all free resources SQL Noir only first 3 levels are free.
 | SQLzoo               | [Link](https://www.sqlzoo.net/)  |
 | InterviewQuery       | [Link](https://www.interviewquery.com/) |
 | Codewars             | [Link](https://www.codewars.com/) |
+| Hackerrank           | [Link](https://www.hackerrank.com/domains/sql) |
