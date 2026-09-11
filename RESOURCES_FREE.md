@@ -15,3 +15,4 @@ A list of all free resources SQL Noir only first 3 levels are free.
 | Codewars             | [Link](https://www.codewars.com/) |
 | Hackerrank           | [Link](https://www.hackerrank.com/domains/sql) |
 | Kaggle               | [Link](https://www.kaggle.com/datasets) |
+| Danny Ma's 8 Weeks sql Challenge | [Link](https://8weeksqlchallenge.com/)
