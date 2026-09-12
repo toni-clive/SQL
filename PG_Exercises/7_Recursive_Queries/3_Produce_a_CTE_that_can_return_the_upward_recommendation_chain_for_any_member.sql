@@ -27,3 +27,17 @@ select x.member,recs2.recommender, mems.firstname, mems.surname
 		on recs2.recommender = mems.memid cross join (select 22 as member) x
 order by member 
 */
+
+-- attempt no 2 
+
+WITH RECURSIVE r(member,recommender) AS 
+(SELECT memid,recommendedBy FROM cd.members  
+ UNION ALL
+ SELECT r.member, f.recommendedBy FROM r 
+ JOIN cd.members f ON r.recommender = f.memid
+)
+ 
+ SELECT member,recommender,x.firstname,x.surname FROM r JOIN cd.members x
+ON recommender = x.memid 
+ WHERE member IN (12,22)
+ORDER BY member,recommender DESC
