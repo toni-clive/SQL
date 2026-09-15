@@ -109,3 +109,52 @@ DISTINCT can also work on multiple columns
 ```SQl
 SELECT first_name, last_name, salary  FROM teachers  ORDER BY salary DESC; 
 ```
+
+Filtering Rows with WHERE
+
+Useful for filtering rows that meet a criteria.
+
+```SQL
+SELECT last_name, school, hire_date  FROM teachers  WHERE school = 'Myers Middle School'; 
+```
+
+Operators List Page 77
+
+Simple examples
+
+= Operator
+```SQL
+SELECT first_name, last_name, school  FROM teachers  WHERE first_name = 'Janet';  Next, we list all school names in the table but exclude F.D. Roosevelt HS  using the not-equal operator:  SELECT school  FROM teachers  WHERE school <> 'F.D. Roosevelt HS'; 
+
+```
+
+Not Equal <> OR !=
+```SQL
+SELECT school  FROM teachers  WHERE school <> 'F.D. Roosevelt HS';
+```
+
+Less Than 
+```SQL
+SELECT first_name, last_name, hire_date  FROM teachers  WHERE hire_date < '2000-01-01'; 
+```
+
+Greater Than or Equal To
+```SQL
+SELECT first_name, last_name, salary  FROM teachers  WHERE salary >= 43500; 
+```
+
+BETWEEN the range is inclusive 40k to 65k
+
+```SQL
+SELECT first_name, last_name, school, salary  FROM teachers  WHERE salary BETWEEN 40000 AND 65000; 
+```
+
+LIKE (Case sensitive)
+
+Percent sign (%) A wildcard matching one or more characters  Underscore (_) A wildcard matching just one character  For example, if you’re trying to find the word baker, the following LIKE  patterns will match it:
+```SQL
+  LIKE 'b%'  LIKE '%ak%'  LIKE '_aker'  LIKE 'ba_er' 
+```
+
+ILIKE (Case insensitive)
+SAME Syntax to LIKE
