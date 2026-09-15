@@ -103,3 +103,9 @@ This would remove duplicate sc
 SELECT DISTINCT school FROM teachers ORDER BY school; 
 ```
 You could also use DISTINCT for checking valid dates structures a possible dataset you may come across could of set up dates with using a text data type.
+
+DISTINCT can also work on multiple columns
+
+```SQl
+SELECT first_name, last_name, salary  FROM teachers  ORDER BY salary DESC; 
+```
