@@ -90,5 +90,16 @@ This is useful as there is no guarantee that data will be in order.
 
 ```SQL
 SELECT first_name, last_name, salary  FROM teachers  ORDER BY salary DESC; 
+
+SELECT first_name, last_name, salary  FROM teachers  ORDER BY salary DESC,....; 
+
 ```
 Interestingly ORDER BY can also accept numbers instead of columns the numbers are determined by the position within the select clause.
+
+Using DISTINCT to Find Unique Values
+
+This would remove duplicate sc
+```SQL
+SELECT DISTINCT school FROM teachers ORDER BY school; 
+```
+You could also use DISTINCT for checking valid dates structures a possible dataset you may come across could of set up dates with using a text data type.
