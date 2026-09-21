@@ -64,7 +64,7 @@ VALUES ('Janet', 'Smith', 'F.D. Roosevelt HS', '2011-10-30',  36200),
 ```
 is the standard approach when insert due to the first part containing all the columns and the values part matching the columns specified. The id column is missing due to how it was defined. It automatically increments.
 
-You can view all the rows of the table by selecting the table then right > View/Edit Data > All Rows.
+You can view all the rows of the table by selecting the databases_name > Schemas > Tables > Table_name > View/Edit Data > All Rows.
 
 #### SQL Conventions
 
@@ -193,4 +193,10 @@ The data type fall into three of the most common categories
 
 *Character string types* are used for any combination of text,numbers and symbols. Character types are as follows:
 
-**char (n)**
+**char (n)** A column that is fixed in length specified by n. Should the entry not be the length of n it will store the length of n regardless. **character (n)** is equivalent.
+
+**varchar (n)** similar to char but it wont use extra space if it's not required.
+
+**text** an unlimited length column up to 1gb of storage. not commonly used.
+
+On the listing 4-1
