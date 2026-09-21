@@ -62,6 +62,8 @@ VALUES ('Janet', 'Smith', 'F.D. Roosevelt HS', '2011-10-30',  36200),
         ('Betty', 'Diaz', 'Myers Middle School', '2005-08-30',  43500),
         ('Kathleen', 'Roush', 'F.D. Roosevelt HS', '2010-10-22', 38500);
 ```
+Format for dates is YYYY-MM-DD
+
 is the standard approach when insert due to the first part containing all the columns and the values part matching the columns specified. The id column is missing due to how it was defined. It automatically increments.
 
 You can view all the rows of the table by selecting the databases_name > Schemas > Tables > Table_name > View/Edit Data > All Rows.
