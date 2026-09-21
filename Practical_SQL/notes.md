@@ -75,6 +75,13 @@ Avoid camelcase and use underscores for object names (tables and column names).
 
 #### How to retrieve data with the SELECT statement.
 
+SELECT can accept an expression such as
+
+```SQL
+SELECT 1 + 4;
+```
+A table isn't required as we aren't gathering data from a table
+
 Retrieving everything row & column from a table by:
 ```SQL
 SELECT * FROM table_name;
@@ -158,3 +165,32 @@ Percent sign (%) A wildcard matching one or more characters  Underscore (_) A wi
 
 ILIKE (Case insensitive)
 SAME Syntax to LIKE
+
+## Chapter 4
+### Understanding Data Types
+
+Useful chapters for as the concepts can be applied to low level languages
+
+Each column within the create_table statement can only contain one data type
+
+```SQL
+CREATE TABLE eagle_watch (  
+  observation_date date,
+  eagles_seen integer,
+  notes text  
+); 
+
+The data type fall into three of the most common categories
+
+```
+**Characters** Any character or symbol
+
+**Numbers** Includes whole numbers & fractions
+
+**Dates and times** Temporal Information
+
+#### Understanding characters
+
+*Character string types* are used for any combination of text,numbers and symbols. Character types are as follows:
+
+**char (n)**
