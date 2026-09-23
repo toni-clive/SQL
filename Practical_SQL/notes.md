@@ -356,3 +356,151 @@ You can also cast using ::type however this is only available in PostgreSQL
 ```SQL
 char_column::integer
 ```
+
+## Chapter 5
+Note C drive on the copy locations is Windows Specific adjust based on your current OS
+### Working with Delimited Text Files
+When you want to copy data from a file usually the file type will be a csv file.
+
+More often than not the first row of the file will contain a bunch of headers, there's an option to skip the first line with POSTGRESQL (however other dialects use it) with COPY FROM
+
+### Issues with delimiters
+
+Some files may contain columns that use a commas within an entry this can cause issues but a text qualifier can help around this issue.
+
+Also another issue could be two text_qualifiers within one entry such as:
+
+"123 Main St."" Apartment 200"
+
+On import the following would be the result:
+
+123 Main St." Apartment 200 
+
+The output of the above shows the importance of review of data.
+
+The syntax of copy
+
+```SQL
+COPY table_name
+FROM 'C:\YourDirectory\your_file.csv'
+WITH (FORMAT CSV, HEADER);
+
+```
+
+Some of the common options for WITH:
+
+Input and output file format 'FORMAT file_type'
+
+Presence of a header row use HEADER to exclude the first row
+
+Delimiter 'character' when csv options is selected by default delimiter is comma if you don't provide delimiter.
+
+Quote Character in CSV mode by default the character is " however you can specify an alternative
+
+### Creating a Table & Importing data
+The constraint creates a key from the first two columns the combinations are unique.
+```SQL
+CREATE TABLE us_counties_pop_est_2019 (
+    state_fips text,                         -- State FIPS code
+    county_fips text,                        -- County FIPS code
+    region smallint,                         -- Region
+    state_name text,                         -- State name	
+    county_name text,                        -- County name
+    area_land bigint,                        -- Area (Land) in square meters
+    area_water bigint,                       -- Area (Water) in square meters
+    internal_point_lat numeric(10,7),        -- Internal point (latitude)
+    internal_point_lon numeric(10,7),        -- Internal point (longitude)
+    pop_est_2018 integer,                    -- 2018-07-01 resident total population estimate
+    pop_est_2019 integer,                    -- 2019-07-01 resident total population estimate
+    births_2019 integer,                     -- Births from 2018-07-01 to 2019-06-30
+    deaths_2019 integer,                     -- Deaths from 2018-07-01 to 2019-06-30
+    international_migr_2019 integer,         -- Net international migration from 2018-07-01 to 2019-06-30
+    domestic_migr_2019 integer,              -- Net domestic migration from 2018-07-01 to 2019-06-30
+    residual_2019 integer,                   -- Residual for 2018-07-01 to 2019-06-30
+    CONSTRAINT counties_2019_key PRIMARY KEY (state_fips, county_fips)	
+);
+
+COPY us_counties_pop_est_2019
+FROM 'C:\YourDirectory\us_counties_pop_est_2019.csv'
+WITH (FORMAT CSV, HEADER);
+```
+
+Second Table note within the copy the example shows which columns you will import the data to.
+Additionally  the csv file doesn't have an id column plus due to the setup of the table it would reject the import due to the auto-increment.
+```SQL
+CREATE TABLE supervisor_salaries (
+    id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    town text,
+    county text,
+    supervisor text,
+    start_date date,
+    salary numeric(10,2),
+    benefits numeric(10,2)
+);
+
+COPY supervisor_salaries (town, supervisor, salary)
+FROM 'C:\YourDirectory\supervisor_salaries.csv'
+WITH (FORMAT CSV, HEADER);
+```
+
+Deleting all rows from a table note when you do such operations the id position doesn't reset this will be done through further steps.
+```SQL
+DELETE FROM supervisor_salaries;
+```
+
+Importing a subset of rows using WHERE
+```SQL
+COPY supervisor_salaries (town, supervisor, salary)
+FROM 'C:\YourDirectory\supervisor_salaries.csv'
+WITH (FORMAT CSV, HEADER)
+WHERE town = 'New Brillig';
+```
+#### Creating temp tables & adding default value to a column using import
+
+```SQL
+DELETE FROM supervisor_salaries;
+
+CREATE TEMPORARY TABLE supervisor_salaries_temp 
+    (LIKE supervisor_salaries INCLUDING ALL);
+
+COPY supervisor_salaries_temp (town, supervisor, salary)
+FROM 'C:\YourDirectory\supervisor_salaries.csv'
+WITH (FORMAT CSV, HEADER);
+
+INSERT INTO supervisor_salaries (town, county, supervisor, salary)
+SELECT town, 'Mills', supervisor, salary
+FROM supervisor_salaries_temp;
+
+DROP TABLE supervisor_salaries_temp;
+
+-- Check the data
+SELECT * FROM supervisor_salaries ORDER BY id LIMIT 2;
+```
+
+### Exporting Data
+Copy all data
+```SQL
+COPY us_counties_pop_est_2019
+TO ''
+WITH (FORMAT CSV, HEADER, DELIMITER '|')
+```
+
+Copy specific columns
+
+```SQL
+COPY us_counties_pop_est_2019
+    (county_name, internal_point_lat, internal_point_lon)
+TO ''
+WITH (FORMAT CSV, HEADER, DELIMITER '|')
+```
+
+Copy query results
+```SQL
+COPY (
+    SELECT county_name, state_name
+    FROM us_counties_pop_est_2019
+    WHERE county_name ILIKE '%mill%'
+     )
+TO ''
+WITH (FORMAT CSV, HEADER);
+```
