@@ -648,6 +648,7 @@ INSERT INTO district_2035 VALUES
     (6, 'Webutuck High School');
 ```
 
+Aliases provided for each join as explained in the book.
 FULL JOIN
 ```SQL
 SELECT * FROM district_2020 d20 JOIN district_2035 d35 ON d20.id = d35.id
@@ -689,4 +690,61 @@ One-to-One Relationship  In our JOIN example in Listing 7-4, there are no duplic
 
 One-to-Many Relationship  In a one-to-many relationship, a key value in one table will have multiple  matching values in another table’s joined column. Consider a database that  tracks automobiles. One table would hold data on manufacturers, with one  row each for Ford, Honda, Tesla, and so on. A second table with model  names, such as Mustang, Civic, Model 3, and Accord, would have several  rows matching each row in the manufacturers’ table.  
 
-Many-to-Many Relationship  A many-to-many relationship exists when multiple items in one table can  relate to multiple items in another table, and vice versa. For example, in a  baseball league, each player can be assigned to multiple positions, and each  position can be played by multiple players. Because of this complexity,  many-to-many relationships usually feature a third, intermediate table in  between the two. In the case of the baseball league, a database might have a  players table, a positions table, and a third called players_positions  that has two columns that support the many-to-many relationship: the id  from the players table and the id from the positions table.  Understanding these relationships is essential because it helps us discern  whether the results of queries accurately reflect the structure of the  database. 
+Many-to-Many Relationship  A many-to-many relationship exists when multiple items in one table can  relate to multiple items in another table, and vice versa. For example, in a  baseball league, each player can be assigned to multiple positions, and each  position can be played by multiple players. Because of this complexity,  many-to-many relationships usually feature a third, intermediate table in  between the two. In the case of the baseball league, a database might have a  players table, a positions table, and a third called players_positions  that has two columns that support the many-to-many relationship: the id  from the players table and the id from the positions table.  Understanding these relationships is essential because it helps us discern  whether the results of queries accurately reflect the structure of the  database.
+
+Selecting Specific Columns in a JOIN
+
+If you do the following:
+
+```SQL
+SELECT id,
+       district_2020.school_2020,
+       district_2035.school_2035
+FROM district_2020 JOIN district_2035
+ON district_2020.id = district_2035.id
+```
+This will produce an error regarding the reference of id due to both tables containing the same column name to resolve this you can confirm which table you need the column from.
+
+```SQL
+SELECT district_2020.id,
+       district_2020.school_2020,
+       district_2035.school_2035
+FROM district_2020 JOIN district_2035
+ON district_2020.id = district_2035.id
+```
+
+Combining Query Results with Set Operators
+
+UNION is used to combine queries that retrieve all rows from both tables, if theres any duplicate UNION will only keep one row.
+```SQL
+SELECT * FROM district_2020  1 UNION  SELECT * FROM district_2035 ORDER BY id; 
+
+```
+Res
+id school_2020
+-- ---------------------
+1  Oak Street School  
+2  Roosevelt High School  
+3  Morrison Elementary  
+4  Chase Magnet Academy  
+5  Dover Middle School  
+6  Webutuck High School 
+
+UNION ALL outputs identical rows.
+
+INTERSECT using INTERSECT returns the rows that exists in both tables and removes duplicates.
+
+```SQL
+SELECT * FROM district_2020
+INTERSECT
+SELECT * FROM district_2035
+ORDER BY id;
+```
+
+EXCEPT returns rows that exist in the first query but not  in the second, also eliminating duplicates if present.
+```SQL
+SELECT * FROM district_2020
+EXCEPT
+SELECT * FROM district_2035
+ORDER BY id;
+```
