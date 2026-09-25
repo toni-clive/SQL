@@ -558,6 +558,11 @@ CONSTRAINT name_of_pair UNIQUE(column_1,column_2)
 
 Ensures data validity when you are references from another table also known as a foreign key should an invalid value be given you can expect the following:
 ```SQL
+INSERT INTO employees
+VALUES
+
+(5,'Michael','Tom',89500,4)
+
 ERROR:  insert or update on table "employees" violates foreign key constraint "employees_dept_id_fkey"
 Key (dept_id)=(4) is not present in table "departments". 
 
@@ -595,3 +600,93 @@ VALUES
 (3,'Arthur','Pappas',72700,2),
 (4,'Michael','Taylor',89500,2)
 ```
+
+Simple JOIN Query 
+
+```SQL
+SELECT emp_id,first_name, last_name, salary, employees.dept_id,dept,city
+FROM employees
+JOIN departments ON departments.dept_id = employees.dept_id
+```
+
+Different types of JOINS:
+
+JOIN Returns rows from both tables where matching values are found in the  joined columns of both tables. Alternate syntax is INNER JOIN.
+
+LEFT JOIN Returns every row from the left table. When SQL finds a row  with a matching value in the right table, values from that row are included  in the results. Otherwise, no values from the right table are displayed.  
+
+RIGHT JOIN Returns every row from the right table. When SQL finds a row  with a matching value in the left table, values from that row are included in  the results. Otherwise, no values from the left table are displayed.  
+
+FULL OUTER JOIN Returns every row from both tables and joins the rows  where values in the joined columns match. If there’s no match for a value in  either the left or right table, the query result contains no values for that  table. 
+
+CROSS JOIN Returns every possible combination of rows from both tables, also can be referred to as a CARTESIAN PRODUCT. 
+
+Exploring the Joins through two tables
+
+```SQL
+CREATE TABLE district_2020 (
+    id integer CONSTRAINT id_key_2020 PRIMARY KEY,
+    school_2020 text
+);
+
+CREATE TABLE district_2035 (
+    id integer CONSTRAINT id_key_2035 PRIMARY KEY,
+    school_2035 text
+);
+
+INSERT INTO district_2020 VALUES
+    (1, 'Oak Street School'),
+    (2, 'Roosevelt High School'),
+    (5, 'Dover Middle School'),
+    (6, 'Webutuck High School');
+
+INSERT INTO district_2035 VALUES
+    (1, 'Oak Street School'),
+    (2, 'Roosevelt High School'),
+    (3, 'Morrison Elementary'),
+    (4, 'Chase Magnet Academy'),
+    (6, 'Webutuck High School');
+```
+
+FULL JOIN
+```SQL
+SELECT * FROM district_2020 d20 JOIN district_2035 d35 ON d20.id = d35.id
+```
+
+JOIN with USING.
+With the use on USING it will find the matching column in both tables and only provide column of id's instead of the previous example
+```SQL
+SELECT * FROM district_2020 d20 JOIN district_2035 d35 USING(id)
+```
+
+LEFT JOIN
+```SQL
+SELECT * FROM district_2020 d20 LEFT JOIN district_2035 d35 ON d20.id = d35.id
+```
+
+RIGHT JOIN
+```SQL
+SELECT * FROM district_2020 d20 RIGHT JOIN district_2035 d35 ON d20.id = d35.id
+```
+
+FULL OUTER JOIN
+```SQL
+SELECT * FROM district_2020 d20 FULL OUTER JOIN
+ district_2035 d35 ON d20.id = d35.id
+```
+
+CROSS JOIN, with this join you should consider the number of rows of the database before using the following JOIN.
+```SQL
+SELECT *  FROM district_2020 CROSS JOIN district_2035  ORDER BY district_2020.id, district_2035.id; 
+```
+
+The chapter mentions the DISTINCTION between 0,'' & NULL These have different meanings in SQL. This is different when you compare to JS.
+
+Understanding the Three Types of Table  Relationships:
+
+One-to-One Relationship  In our JOIN example in Listing 7-4, there are no duplicate id values in  either table: only one row in the district_2020 table exists with an id of 1,  and only one row in the district_2035 table has an id of 1. That means  any given id in either table will find no more than one match in the other  table. In database parlance, this is called a one-to-one relationship. Consider  another example: joining two tables with state-by-state census data. One  table might contain household income data and the other data is about  educational attainment. Both tables would have 51 rows (one for each state  plus Washington, D.C.), and if we joined them on a key such as state name,  state abbreviation, or a standard geography code, we’d have only one match  for each key value in each table.
+
+
+One-to-Many Relationship  In a one-to-many relationship, a key value in one table will have multiple  matching values in another table’s joined column. Consider a database that  tracks automobiles. One table would hold data on manufacturers, with one  row each for Ford, Honda, Tesla, and so on. A second table with model  names, such as Mustang, Civic, Model 3, and Accord, would have several  rows matching each row in the manufacturers’ table.  
+
+Many-to-Many Relationship  A many-to-many relationship exists when multiple items in one table can  relate to multiple items in another table, and vice versa. For example, in a  baseball league, each player can be assigned to multiple positions, and each  position can be played by multiple players. Because of this complexity,  many-to-many relationships usually feature a third, intermediate table in  between the two. In the case of the baseball league, a database might have a  players table, a positions table, and a third called players_positions  that has two columns that support the many-to-many relationship: the id  from the players table and the id from the positions table.  Understanding these relationships is essential because it helps us discern  whether the results of queries accurately reflect the structure of the  database. 
