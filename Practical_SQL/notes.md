@@ -529,3 +529,69 @@ Multiplication, division, modulo.
 Addition and subtraction 
 
 Uses Parentheses to change the order.
+
+## Chapter 7
+
+Explains how to query multiple, related tables by joining them on key columns.
+
+Classic JOIN 
+
+SELECT * FROM table_one JOIN table_two ON table_one.key_column = table_two.foreign_key_column
+
+The statement works through the ON Clause where the rows evaluate to true.
+
+Any other expression can be used such as long as it evaluates to true:
+
+ON table_one.key_column >= table_two.foreign_key_column
+
+ON table_one.key_column <= table_two.foreign_key_column
+
+ON table_one.key_column = table_two.foreign_key_column-1
+
+The author uses a realistic scenario to show the use of the join where you are given data separately rather then in one csv file
+
+Below we create two tables with constraints such as PK through:
+CONSTRAINT column_name PRIMARY KEY (column_name)
+
+The following below ensures unique pairs
+CONSTRAINT name_of_pair UNIQUE(column_1,column_2)
+
+Ensures data validity when you are references from another table also known as a foreign key should an invalid value be given you can expect the following:
+```SQL
+ERROR:  insert or update on table "employees" violates foreign key constraint "employees_dept_id_fkey"
+Key (dept_id)=(4) is not present in table "departments". 
+
+SQL state: 23503
+Detail: Key (dept_id)=(4) is not present in table "departments".
+```
+column_name data_type REFERENCES another_table (another_tables_column_name)
+```SQL
+CREATE TABLE departments(
+	dept_id int,
+	dept text,
+	city text,
+	CONSTRAINT dept_key PRIMARY KEY (dept_id),
+	CONSTRAINT dept_city_unique UNIQUE(dept,city)
+);
+
+CREATE TABLE employees(
+	emp_id int,
+	first_name text,
+	last_name text,
+	salary numeric(10,2),
+	dept_id integer REFERENCES departments (dept_id),
+	CONSTRAINT emp_key PRIMARY KEY (emp_id)
+);
+
+INSERT INTO departments
+VALUES
+(1,'Tax','Atlanta'),
+(2,'IT','Boston');
+
+INSERT INTO employees
+VALUES
+(1,'Julia','Reyes',115300,1),
+(2,'Janet','King',98000,1),
+(3,'Arthur','Pappas',72700,2),
+(4,'Michael','Taylor',89500,2)
+```
