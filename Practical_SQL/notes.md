@@ -504,3 +504,28 @@ COPY (
 TO ''
 WITH (FORMAT CSV, HEADER);
 ```
+
+## Chapter 6
+Introduces the math operators some of them that are different compared to other programming languages:
+
+|/ Square root  
+||/ Cube root 
+! Factorial 
+
+Return types with math operators
+
+Two integers will return an integer
+
+Numeric on either side of the equation will return numeric
+
+Floating-point returns a floating-point number of type double precision
+
+Shows how to do math between two columns and aggregate functions such as avg, sum,min, max, median through the functions percentile_cont(n) and percentile_disc(n), mode.
+
+Order of operations:
+
+Exponents and roots.
+Multiplication, division, modulo.
+Addition and subtraction 
+
+Uses Parentheses to change the order.
