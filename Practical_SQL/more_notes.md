@@ -63,4 +63,33 @@ Right click on the table name then select all rows
 
 Method two:
 
-Using the query tool writing the following statement ```sql SELECT * FROM tablename```
+Using the query tool writing the following statement 
+```sql
+ SELECT * FROM tablename
+```
+
+## 🔍 Chapter 3: Data Retrieval, Sorting & Filtering
+
+You can retrieve data from your table using the select statement above the * returns all columns within the table.
+
+Note that you may not always need a table selection so you can omit the table.
+
+The following examples are valid as the return an expression.
+
+```sql
+SELECT 'hello there' AS hello
+```
+
+```sql
+SELECT 4+4 AS hello
+```
+
+WHERE clause:
+
+Used for filtering out rows that meet the condition listed within the clause an example:
+
+```sql
+SELECT first_name, last_name FROM teachers WHERE salary > 50000
+```
+
+The chapter covers many other examples of the where clause.
