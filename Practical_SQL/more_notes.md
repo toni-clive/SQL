@@ -115,3 +115,42 @@ CAST Function used to cast one data type to the other.
 The standard notation is CAST(insert expression)
 
 Postgres as the shortcut of ::CAST but it's not functional for beyond Postgres.
+
+## 📁 Chapter 5: Ingestion & Export (`COPY`)
+
+Introduces bulk imports for COPY statement
+
+The general Syntax for copy is as follows:
+
+```sql
+COPY table_name
+FROM 'C:\YourDirectory\your_file.csv'
+WITH (FORMAT CSV, HEADER);
+```
+The chapter lists several import options.
+
+HEADER is used to skip the first row of a CSV file.
+
+Subset import with COPY specifying of columns required with the statement useful for when you have an auto generated column as you can't add data into it by default.
+
+```sql
+COPY supervisor_salaries (town, supervisor, salary)
+FROM 'C:\YourDirectory\supervisor_salaries.csv'
+WITH (FORMAT CSV, HEADER);
+```
+
+The chapter also includes the following regarding importing:
+
+adding rows with a filter
+
+Adding a Value to a Column During Import
+
+Copy to Export Data
+
+```sql
+COPY us_counties_pop_est_2019
+TO 'C:\YourDirectory\us_counties_export.txt'
+WITH (FORMAT CSV, HEADER, DELIMITER '|');
+```
+
+You can also export particular columns & subqueries.
