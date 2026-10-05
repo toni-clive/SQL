@@ -93,3 +93,25 @@ SELECT first_name, last_name FROM teachers WHERE salary > 50000
 ```
 
 The chapter covers many other examples of the where clause.
+
+## 📊 Chapter 4: Data Types & Casting
+
+Starts off the chapter with a data dictionary, this is a document that lists each other specifies the type as well as the column values.
+
+We are also given the fact in a table one column can only hold one datatype.
+
+The chapter also introduces decimals and floating points is worth reading as it shows how the issues you can run into when selecting the datatypes and floating point-math.
+
+We also get shown timestamps and interval types and their use cases.
+
+A timestamp may contain a timezone this additional info is practical as most application won't just be operational in one country.
+
+timestamp with -+ interval always returns a timestamp
+
+The chapter ends with other data types you may encounter in the wild.
+
+CAST Function used to cast one data type to the other.
+
+The standard notation is CAST(insert expression)
+
+Postgres as the shortcut of ::CAST but it's not functional for beyond Postgres.
