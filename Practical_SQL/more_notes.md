@@ -154,3 +154,7 @@ WITH (FORMAT CSV, HEADER, DELIMITER '|');
 ```
 
 You can also export particular columns & subqueries.
+
+## 🧮 Chapter 6: Math, Percentages & Aggregates
+
+Introduces Math Operators must are the same to other programming languages.
