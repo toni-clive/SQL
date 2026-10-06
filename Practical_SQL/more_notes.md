@@ -158,3 +158,34 @@ You can also export particular columns & subqueries.
 ## 🧮 Chapter 6: Math, Percentages & Aggregates
 
 Introduces Math Operators must are the same to other programming languages.
+
+## 🔗 Chapter 7: Joins & Set Operators
+
+When using ON for JOIN the expression that joins the table together results in the boolean value of true.
+
+Not all joins will simply be 
+
+table_a.column_a = table_b.column_b
+
+New constraints/references are also introduced via the following examples:
+
+CREATE TABLE departments (
+    dept_id integer,
+    dept text,
+    city text,
+    CONSTRAINT dept_key PRIMARY KEY (dept_id),
+    CONSTRAINT dept_city_unique UNIQUE (dept, city)
+);
+
+CREATE TABLE employees (
+    emp_id integer,
+    first_name text,
+    last_name text,
+    salary numeric(10,2),
+    dept_id integer REFERENCES departments (dept_id),
+    CONSTRAINT emp_key PRIMARY KEY (emp_id)
+);
+
+Discusses the different joins, important to note that cross join can be hardware intense on large databases as it does actions somewhat similar to a nested for loop
+
+Introduces Table relationships.
