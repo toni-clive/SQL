@@ -189,3 +189,148 @@ CREATE TABLE employees (
 Discusses the different joins, important to note that cross join can be hardware intense on large databases as it does actions somewhat similar to a nested for loop
 
 Introduces Table relationships.
+
+## 🏗️ Chapter 8: Table Design, Constraints & Indexes
+
+Naming style conventions:
+
+Snake case as shown in brief_notes.
+
+Avoid cryptic abbreviations.
+
+For table names use plurals.
+
+Length of Identifier names PostgreSQL has a limit for 63.
+
+Use date references when creating backups table_name_YYYY_MM_DD.
+
+Everything defaults to lowercase with Identifiers.
+
+The following example would produce an table already exist error:
+
+CREATE TABLE customers (
+customer_id text,
+--snip--
+);
+CREATE TABLE Customers (
+customer_id text,
+--snip--
+);
+
+Composite is created when a primary key doesn't meet the primary key requirements to ensure the row within the table is unique. In this example the student_id wouldn't ensure unique data due to the table representing an attendance checker
+
+CREATE TABLE natural_key_composite_example (
+    student_id text,
+    school_day date,
+    present boolean,
+    CONSTRAINT student_key PRIMARY KEY (student_id, school_day)
+);
+
+Useful to consider by default the primary key constraint automatically ensures the column cannot be null however with other dialects such as MySQL you also need to be more verbose and also add the constraint of NOT NULL to a PK column
+
+Surrogate keys
+
+CREATE TABLE surrogate_key_example (
+    order_number bigint GENERATED ALWAYS AS IDENTITY,
+    product_name text,
+    order_time timestamp with time zone,
+    CONSTRAINT order_number_key PRIMARY KEY (order_number)
+);
+
+INSERT INTO surrogate_key_example (product_name, order_time)
+VALUES ('Beachball Polish', '2020-03-15 09:21-07'),
+       ('Wrinkle De-Atomizer', '2017-05-22 14:00-07'),
+       ('Flux Capacitor', '1985-10-26 01:18:00-07');
+
+SELECT * FROM surrogate_key_example;
+
+Overriding values
+
+INSERT INTO natural_key_composite_example (student_id,
+school_day, present)
+VALUES(775, '2022-01-22', 'Y');
+INSERT INTO natural_key_composite_example (student_id,
+school_day, present)
+VALUES(775, '2022-01-23', 'Y');
+INSERT INTO natural_key_composite_example (student_id,
+school_day, present)
+VALUES(775, '2022-01-23', 'N');
+
+ERROR: duplicate key value violates unique constraint
+"student_key"
+DETAIL: Key (student_id, school_day)=(775, 2022-01-23)
+already exists.
+
+REFERENCES keyword to ensure data validity the final insert will produce the license_id isn't valid.
+
+CREATE TABLE licenses (
+    license_id text,
+    first_name text,
+    last_name text,
+    CONSTRAINT licenses_key PRIMARY KEY (license_id)
+);
+
+CREATE TABLE registrations (
+    registration_id text,
+    registration_date timestamp with time zone,
+    license_id text REFERENCES licenses (license_id),
+    CONSTRAINT registration_key PRIMARY KEY (registration_id, license_id)
+);
+
+INSERT INTO licenses (license_id, first_name, last_name)
+VALUES ('T229901', 'Steve', 'Rothery');
+
+INSERT INTO registrations (registration_id, registration_date, license_id)
+VALUES ('A203391', '2022-03-17', 'T229901');
+
+INSERT INTO registrations (registration_id, registration_date, license_id)
+VALUES ('A75772', '2022-03-17', 'T000001');
+
+Deleting Related Records with Cascade 
+
+Say if one of the registrations are removed we can apply DELETE CASCADE at the end of the license_id definitions in order to remove the license_id from the license table. Useful to ensure data integrity.
+
+UNIQUE constraint already mentioned within the brief_notes however UNIQUE allows NULL unlike Primary Key.
+
+Modifying constraints
+
+CREATE TABLE not_null_example (
+student_id bigint GENERATED ALWAYS AS IDENTITY,
+first_name text NOT NULL,
+last_name text NOT NULL,
+CONSTRAINT student_id_key PRIMARY KEY (student_id)
+);
+
+ALTER TABLE not_null_example DROP CONSTRAINT student_id_key;
+ALTER TABLE not_null_example ADD CONSTRAINT student_id_key
+PRIMARY KEY (student_id);
+ALTER TABLE not_null_example ALTER COLUMN first_name DROP NOT
+NULL;
+ALTER TABLE not_null_example ALTER COLUMN first_name SET NOT
+NULL;
+
+# Chapter 9: Extracting Information by Grouping and Summarizing
+
+
+## Chapter 10: Inspecting and Modifying Data
+
+ANSI SQL version of updating from another table:
+
+UPDATE table
+SET column = (SELECT column
+FROM table_b
+WHERE table.column = table_b.column)
+WHERE EXISTS (SELECT column
+FROM table_b
+WHERE table.column = table_b.column);
+
+Within Postgres we can do things simpler:
+
+UPDATE table
+SET column = table_b.column
+FROM table_b
+WHERE table.column = table_b.column;
+
+If you try to back up a table inside the database using a query like CREATE TABLE backup_table AS SELECT * FROM original_table;, constraints will NOT be picked up.
+• This method only copies the column names, data types, and the data itself.
+• It completely ignores primary keys, foreign keys, indexes, and default values.
